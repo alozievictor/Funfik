@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Sienna from "../assets/siennaBg.png";
-import Mazda from "../assets/2024.jpg";
+import Sienna from "../assets/car blob1.jpg";
+import Mazda from "../assets/blob6.jpg";
 
 const Hero = () => {
   const settings = {
@@ -27,13 +27,10 @@ const Hero = () => {
             <div className="md:h-full h-[80vh] mx-auto grid md:grid-cols-2 gap-6">
               <div className="flex justify-center items-center mt-20">
                 <div className="w-full md:w-[65%] mx-auto">
-                  <h4 className=" text-gray-800 capitalize text-xl md:text-base font-medium">
-                    welcome to Funfik
-                  </h4>
-                  <h1 className="heroInnerCont capitalize tracking-normal text-3xl md:text-[50px] text-blue-900 font-medium py-3">
+                  <h1 className="heroInnerCont capitalize tracking-normal text-3xl md:text-6xl text-blue-900 font-medium py-3">
                     Ride for class, confort and safty.
                   </h1>
-                  <p className="text-black text-base mt-1">
+                  <p className="text-black text-base md:text-lg mt-1">
                     We're dedicated to providing reliable and efficient
                     transportation services to meet your needs.
                   </p>
@@ -51,7 +48,7 @@ const Hero = () => {
 
               <div className="w-full">
                 <div className="Hero-cont1">
-                  <img src={Mazda} alt="pix" className="w-[90%] h-[60vh]" />
+                  <img src={Mazda} alt="pix" className="w-[100%] h-[80vh]" />
                 </div>
               </div>
             </div>
@@ -61,13 +58,10 @@ const Hero = () => {
             <div className="md:h-full h-[80vh] mx-auto grid md:grid-cols-2 gap-6">
               <div className="flex justify-center items-center mt-20">
                 <div className="w-full md:w-[65%] mx-auto">
-                  <h4 className=" text-gray-800 capitalize text-xl md:text-base font-medium">
-                    welcome to Funfik
-                  </h4>
-                  <h1 className="heroInnerCont capitalize tracking-normal text-3xl md:text-[50px] text-blue-900 font-medium py-3">
+                  <h1 className="heroInnerCont capitalize tracking-normal text-3xl md:text-6xl text-blue-900 font-medium py-3">
                     Ride for class, confort and safty.
                   </h1>
-                  <p className="text-black text-base mt-1">
+                  <p className="text-black text-base md:text-lg mt-1">
                     We're dedicated to providing reliable and efficient
                     transportation services to meet your needs.
                   </p>
@@ -84,7 +78,7 @@ const Hero = () => {
               </div>
               <div className="w-full">
                 <div className="Hero-cont1">
-                  <img src={Sienna} alt="pix" className="w-[90%] h-[60vh]" />
+                  <img src={Sienna} alt="pix" className="w-[100%] h-[80vh]" />
                 </div>
               </div>
             </div>

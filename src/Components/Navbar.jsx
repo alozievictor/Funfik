@@ -36,7 +36,7 @@ const Navbar = () => {
     { to: "/service", label: "Services" },
     { to: "/destination", label: "Destination" },
     { to: "/contact", label: "Contact us" },
-    { to: "/login", label: "Login" },
+    // { to: "/login", label: "Login" },
   ];
 
   const [scrolling, setScrolling] = useState(false);
@@ -80,10 +80,10 @@ const Navbar = () => {
 
   return (
     <header
-      className={`md:fixed drop-shadow-sm relative ${
+      className={`md:fixed drop-shadow relative ${
         scrolling
           ? "bg-white w-full"
-          : "bg-transparent w-full border-b border-blue-950"
+          : "bg-transparent w-full"
       } `}
       style={{ zIndex: nav ? "10" : "1" }}
     >
@@ -93,8 +93,8 @@ const Navbar = () => {
             <div className="flex items-center text-white md:pt-0">
               <img src={logo} alt="pic" className="w-12 h-12 mt-1" />
               <h2
-                className={`ml-2 md:mt-2 text-[25px] ${
-                  scrolling ? "text-white " : "text-black"
+                className={`ml-2 md:mt-2 text-3xl text-black ${
+                  scrolling ? " " : ""
                 }`}
               >
                 Funfik
@@ -117,10 +117,12 @@ const Navbar = () => {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className={`text-base font-light pt-2 focus:outline-none hover:font-normal cursor-pointer text-gray-900 hover:text-blue-900 transition duration-300 ${
+                  className={`text-base font-light pt-2 focus:outline-none hover:font-normal cursor-pointer text-gray-900 hover:text-blue-900 transition duration-300 
+                  ${
                     link.label === "Login" ? "p-2.5 border border-blue-950 text-blue-950 font-medium text-center cursor-pointer lg:w-28 rounded-md" : "" 
-                  } ${
-                    scrolling ? "text-white " : "text-black"
+                  } 
+                  ${
+                    scrolling ? "" : ""
                   }`}
                 >
                   {link.label}

@@ -26,7 +26,7 @@ function App() {
           >
             <BounceLoader
               color={color}
-              size={40}
+              size={70}
               aria-label="Loading Spinner"
               data-testid="loader"
               className="flex justify-center items-center"
